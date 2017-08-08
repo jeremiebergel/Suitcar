@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>SUIT'S CAR - Home</title>
+</head>
+<body>
+<header>
+    <div class="brand-title">
+        <h1><a href="index.html">SUIT'S CAR</a></h1>
+    </div>
+    <nav class=" nav-bar clearfix">
+        <ul>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="list.html">LEASING</a></li>
+            <li><a href="#">AUCTIONS</a></li>
+        </ul>
+        <a href="cart.html"><img src="img-layout/shopping-basket-desk.svg" alt="cart"></a>
+        <a href="connect.html"><img src="img-layout/profile.svg" alt="profile"></a>
+    </nav>
+
+    <div id="hambuger" class="clearfix">
+        <div id="hamburger-content">
+            <ul class="clearfix">
+                <a href="#"><li>NEWS</li></a>
+                <a href="#"><li>WHO WE ARE ?</li></a>
+                <a href="list.html"><li>LEASING</li></a>
+                <a href="#"><li>AUCTIONS</li></a>
+                <a href="#"><li>CONTACT</li></a>
+                <a href="connect.html"><li>LOG-IN/LOG-OUT</li></a>
+            </ul>
+        </div>
+        <button class="clearfix" id="hamburger-button">&#9776;</button>
+        <div class="clearfix" id="hamburger-button-cart">
+            <img src="img-layout/shopping-basket.svg" alt="shopping basket">
+        </div>
+        <div id="hamburger-sidebar" class="closed">
+            <div id="hamburger-sidebar-header"><img src="img-layout/logo.png" alt=""></div>
+            <div id="hamburger-sidebar-body"></div>
+
+        </div>
+        <div id="hamburger-overlay"></div>
+    </div>
+</header>
+
+<div class="garage clearfix">
+    <img class="store-garage" src="img-content/garage.jpg" alt="affiche garage">
+    <img class="logo-garage" src="img-layout/logo.png" alt="logo Suit's Car">
+    <span>7 Rodeo Dr, Beverly Hills, CA 90212, USA</span>
+</div>
+<div class="suits-car">
+    <div class="suits-car-home">
+        <h2>DON'T RENT A CAR</h2>
+        <h2>RENT AN EXCEPTIONAL CAR.</h2>
+        <button onclick="window.location.href='list.html'">OUR CARS</button>
+        <span>7 Rodeo Dr, Beverly Hills, CA 90212, USA</span>
+    </div>
+    <div class="suits-car-home-img">
+        <img src="img-content/bck-desk2.jpg" alt="collection car">
+    </div>
+</div>
+<div class="news-article clearfix">
+    <div class="article">
+        <h2>1976 Porsche 911 Targa</h2>
+        <img src="img-content/article1-img.jpg" alt="1976 Porsche 911 Targa">
+    </div>
+
+    <div class="article">
+        <h2>Movie Car</h2>
+        <img src="img-content/movie-car.jpg" alt="movie car james bond aston martin">
+    </div>
+
+    <div class="article">
+        <h2>JAGUAR D-Type</h2>
+        <img src="img-content/jaguar.jpg" alt="Jaguar D-Type">
+    </div>
+</div>
+
+<div class="newsletter clearfix">
+    <img src="img-content/img-newsletter.png" alt="newsletter img">
+    <span>Subscribe to our newsletter</span>
+    <input type="email" placeholder="YOUR E-MAIL">
+    <button>SUBMIT</button>
+</div>
+
+<footer>
+    <img src="img-layout/logo-footer.png" alt="logo">
+    <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms & condition</a></li>
+        <li><a href="#">Suit's Car</a></li>
+    </ul>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>

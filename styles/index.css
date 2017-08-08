@@ -1,0 +1,1262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+body {
+    /*overflow-x: hidden;*/
+}
+
+.brand-title {
+    width: 100%;
+    height: 47px;
+    zpadding-top: 13px;
+    background-color: #2A4D44;
+    text-align: center;
+}
+
+h1 {
+    font-family: Didot;
+    font-size: 1em;
+    margin-left: 3%;
+    padding-top: 3%;
+    color: #FFF;
+}
+.title-nav {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav, nav ul, nav ul li {
+    display: none;
+}
+
+/*----- MENU HAMBURGER -------*/
+header{
+    position: relative;
+}
+#hamburger, #hamburger-content {
+    position: relative;
+    display: block;
+    height: 40px;
+    background-color: red;
+}
+
+#hamburger-button {
+    position: absolute;
+    right: 5%;
+    top: 5px;
+    bottom: 617px;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.7em;
+    color: white;
+    vertical-align: top;
+    float: right;
+    padding: 0;
+
+}
+
+#hamburger-button-cart img {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 6%;
+}
+
+#hamburger-overlay {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#hamburger-sidebar {
+    position: fixed;
+    width: 65%;
+    z-index: 20;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    transform: translateX(-100%);
+    transition: transform .2s ease-out;
+    text-align: left;
+    opacity: 1;
+
+}
+
+#hamburger-sidebar ul {
+    padding: 15% 0 0 20%;
+    max-width: 100%;
+}
+
+#hamburger-sidebar li {
+    list-style: none;
+    padding: 13% 0 5% 0;
+    width: 90%;
+
+}
+
+#hamburger-sidebar-header {
+    background-color: #2A4D44;
+    text-align: center;
+    height: 100px;
+
+}
+
+#hamburger-sidebar-header img {
+    width: 25%;
+    margin-top: 8%;
+}
+
+#hamburger-sidebar-body {
+    padding: 16px 8px;
+
+}
+
+#hamburger-sidebar-body ul li {
+    color: #2A4D44;
+    font-family: Geneva;
+    font-size: 0.8em;
+
+}
+
+header #hamburger ul {
+    display: none;
+}
+
+#hamburger-content {
+    display: none;
+}
+
+#hamburger-button, #hamburger-sidebar,
+.hamburger-activated #hamburger-overlay {
+    display: block;
+}
+
+.hamburger-activated #hamburger-sidebar {
+    transform: translateX(0);
+}
+
+/*----- END MENU HAMBURGER ------*/
+nav {
+    width: 100%;
+    height: 45px;
+    font-family: Geneva;
+    color: #979797;
+    border-bottom: 1px solid #979797;
+    text-align: center;
+
+}
+
+li.cart-logo {
+    padding: 3.4% 0 0 3%;
+}
+
+li img {
+    width: 18px;
+}
+
+.garage {
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.garage img.store-garage {
+
+    width: 100%;
+}
+
+.garage img.logo-garage {
+    position: absolute;
+    left: 34%;
+    bottom: 40%;
+    width: 35%;
+}
+
+.garage span {
+    position: absolute;
+    bottom: 9%;
+    margin-left: 6%;
+    font-family: Didot;
+    font-size: 1.1em;
+    color: #FFF;
+}
+.suits-car {
+    display: none;
+}
+
+.article {
+    margin-bottom: 2%;
+}
+
+.article h2 {
+    width: 70%;
+    margin-left: 5%;
+    font-family: Geneva;
+    font-size: 1em;
+    color: #2A4D44;
+    border-bottom: 1px solid #979797;
+    cursor: pointer;
+}
+
+.article h2:active {
+    color: #979797;
+
+}
+
+.article img {
+    width: 90%;
+    height: 260px;
+    margin: 5%;
+}
+.newsletter {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5%;
+}
+
+footer img {
+    width: 10%;
+    padding-bottom: 5%;
+}
+footer ul {
+    display: none;
+}
+
+    /*-------  FIN PAGE INDEX.HTML   -------*/
+
+
+
+    /*-------  PAGE LIST.HTML   -------*/
+
+    nav.nav-form {
+        text-align: center;
+    }
+
+    nav.nav-form li:first-child {
+        float: left;
+        margin-left: 40%;
+        font-family: Didot;
+        font-size: 0.9em;
+    }
+
+    nav.nav-form li:last-child {
+        margin: 0.5% 0 0 25%;
+    }
+    .page-car {
+        height: 40px;
+        border-bottom: 1px solid #979797;
+        text-align: center;
+    }
+
+    .page-car img {
+        float: left;
+        width: 5%;
+        margin: 2.5% 0 0 5%;
+    }
+
+    .page-car h3 {
+        font-family: Didot;
+        font-size: 0.9em;
+        color: #2A4D44;
+        margin-top: 2.7%;
+    }
+
+    .form-car {
+        padding: 2% 0 2% 0;
+        border-bottom: 1px solid #979797;
+
+    }
+
+    .spec-car {
+        display: inline-block;
+        margin-left: 2.99%;
+        border-right: 1px solid #979797;
+        padding-right: 5%;
+    }
+
+    .spec-car:last-child {
+        border:none;
+    }
+
+    .spec-car select {
+        border:none;
+        background-color: #FFF;
+        color: #2A4D44;
+
+    }
+
+    .visu-car-list {
+        padding-top: 5%;
+    }
+
+    img.active {
+        display: none;
+    }
+
+    .visu-car-list span.price-car {
+        margin-left: 33%;
+        font-family: Didot;
+        font-size: 1.1em;
+        color: #2A4D44;
+        text-decoration: underline;
+    }
+    .visu-car-list .car-img {
+        float: right;
+        width: 70%;
+
+    }
+
+    .content-carlist {
+        padding: 4% 0 0 6%;
+    }
+
+    .content-carlist span {
+        display: block;
+        margin-top: 2%;
+        font-family: Didot;
+        font-weight: bold;
+        color: #2A4D44;
+        font-size: 0.8em;
+    }
+
+    .content-carlist span:first-child{
+        margin-top: 13%;
+    }
+
+    .content-carlist span:nth-child(n+2){
+        font-family: Geneva;
+    }
+
+    .btn-carlist {
+        margin: 0 0 10% 6%;
+    }
+
+    .btn-carlist button {
+        font-family: Geneva;
+        border-radius: 0px;
+    }
+
+    .btn-carlist button:first-child {
+        background-color: #FFF;
+        border: 1px solid #979797;
+        width: 35%;
+        height: 35px;
+        color: #2A4D44;
+    }
+
+    .btn-carlist button:last-child{
+        float: right;
+        background-color: #2A4D44;
+        color: #FFF;
+        border:none;
+        height: 35px;
+        width: 15%;
+        margin-right: 6%;
+        outline-style: none;
+    }
+
+    .line-carlist {
+        width: 50%;
+        height: 1px;
+        background-color: #979797;
+        margin: 0 0 5% 25%;
+    }
+
+    /*-------  FIN PAGE LIST.HTML   -------*/
+
+
+/*-------  PAGE FICHE.HTML   -------*/
+.order-car img {
+    float: left;
+    padding-top: 1%;
+}
+
+.order-car span {
+    float: left;
+    font-family: Didot;
+    font-size: 1.1em;
+    color: #2A4D44;
+    margin: 2% 0 0 10%;
+
+}
+
+.order-car > .btn-carlist {
+    padding-top: 1%;
+}
+
+.order-car > .btn-carlist button {
+    height: 30px;
+}
+
+.car-img-fiche {
+    width: 80%;
+    margin-left: 8%;
+}
+
+.fiche-description {
+    padding-top: 5%;
+}
+
+.perf-car {
+    margin: 0 0 10% 30%;
+}
+
+.perf-car ul {
+    display: inline-block;
+    list-style: none;
+    font-family: Geneva;
+    font-size: 0.8em;
+}
+
+.perf-car ul:first-child {
+    color: #2A4D44;
+}
+
+.perf-car ul:last-child {
+    padding-left: 10%;
+    color: #000;
+}
+
+.fiche-story-car {
+    width: 85%;
+    margin: 0 0 10% 10%;
+    font-family: Geneva;
+    font-size: 0.8em;
+    color: #2A4D44;
+    text-align: justify;
+}
+
+
+/*------ CALENDAR -------*/
+.calendar {
+    position: absolute;
+    left:10%;
+    z-index: 11;
+    width: 80%;
+    border: 1px solid #2A4D44;
+    border-radius: 2%;
+    font-family: Geneva;
+    font-size: 0.8em;
+    background-color: #FFF;
+}
+
+.activate {
+    display: none;
+}
+
+.calendar .month {
+    height: 40px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.calendar .month ul {
+    list-style-type: none;
+}
+
+.calendar .month ul li {
+    padding-top: 3.5%;
+    color: #2A4D44;
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+
+.calendar .month ul li.prev {
+    float: left;
+    padding:3.5% 0 0 28%;
+}
+
+.calendar .month ul li.next {
+    float: right;
+    padding: 3.5% 28% 0 0;
+}
+
+.calendar .month ul li span {
+    font-size: 1em;
+}
+
+.calendar .month ul li span.event-calendar {
+    font-size: 1.3em;
+}
+
+.calendar .weekdays {
+    border-bottom: 1px solid #979797;
+    border-top: 1px solid #979797;
+    background-color: #FFF;
+    padding: 2% 0;
+}
+
+.calendar .weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #2A4D44;
+    text-align: center;
+}
+
+.calendar .days {
+    background: transparent;
+    margin: 0;
+    padding: 2% 0;
+}
+
+.calendar .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 2%;
+    margin: 0 5.8% 1% 5.3%;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.calendar .days li .active {
+    padding: 20%;
+    background: #2A4D44;
+    color: white !important;
+}
+
+.calendar .days li.future-event {
+    color: #979797;
+    text-decoration: line-through;
+}
+/*------  FIN CALENDAR -------*/
+
+/*------ CAROUSEL -------*/
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #2A4D44;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/*------  FIN CAROUSEL -------*/
+
+
+
+
+
+
+
+/*-------  FIN PAGE FICHE.HTML   -------*/
+
+
+/*-------  PAGE CART.HTML   -------*/
+
+.cart-car {
+    border: 1px solid #2A4D44;
+    width: 90%;
+    margin: 10% 0 0 5%;
+}
+
+.order-car span.cart-title-car {
+    font-family: Didot;
+    font-size: 1.1em;
+    color: #2A4D44;
+    margin: 2% 0 0 33%;
+    text-decoration: underline;
+
+}
+
+.time-order{
+    margin-bottom: 5%;
+}
+
+.time-order span {
+    font-family: Geneva;
+    font-size: 0.8em;
+    color: #2A4D44;
+    padding-left: 28%;
+}
+
+.time-order img {
+    width: 5%;
+    margin: 2% 0 0 3%;
+}
+
+.price-car-total {
+    border: 1px solid #2A4D44;
+    width: 90%;
+    height: 40px;
+    margin: 5% 0 0 5%;
+}
+
+.price-car-total span:first-child {
+    float: left;
+    color: #2A4D44;
+    font-family: Didot;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 3% 0 0 5%;
+    text-decoration: underline;
+
+}
+
+.price-car-total span:last-child{
+    float: right;
+    font-family: Geneva;
+    margin: 3% 5% 0 0;
+
+}
+
+/*-------  FIN PAGE CART.HTML   -------*/
+
+
+/*-------  PAGE CONNECT.HTML   -------*/
+
+.back-form {
+    position: absolute;
+    z-index: 1;
+    margin-left: 15%;
+    height: 500px;
+}
+form {
+    position: relative;
+}
+
+
+
+div[class*="form-step-"] {
+    display: none;
+    position: relative;
+    z-index: 2;
+    border:1px solid #2A4D44;
+    background-color: #FFF;
+    width: 70%;
+    height: 330px;
+    margin: 30% 0 0 15%;
+    border-radius: 10px;
+}
+div[class*="form-step-"].active{
+    display: block;
+}
+
+
+.connect-form input {
+    display: block;
+    margin: 15% 0 0 5%;
+    border:none;
+    border-bottom: 1px solid #2A4D44;
+    font-family: Geneva;
+    font-size: 0.8em;
+    width: 85%;
+    outline-style: none;
+}
+
+button.btn-form {
+    position: absolute;
+    z-index: 14;
+    font-family: Geneva;
+    width: 20%;
+    height: 35px;
+    margin: 10% 0 0 20%;
+    border-radius: 7px;
+    border: 1px solid #979797;
+    background-color: #2A4D44;
+    color: #FFF;
+    outline-style: none;
+}
+button.step-after {
+    bottom:6%;
+    right: 22%;
+}
+
+button.step-before {
+    bottom:6%;
+    left: 1%;
+}
+/*-------  FIN PAGE CONNECT.HTML   -------*/
+
+/* ------- RESPONSIV ------*/
+
+@media screen and (min-width: 480px){
+
+    body {
+        float: left;
+        width: 100%;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    /* PAGE LISTE */
+
+    .wrapper-list {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .first-car-list {
+        float: left;
+        width: 45%;
+        height: 295px;
+        margin: 0 2.5%;
+    }
+
+    .page-car {
+        display: none;
+    }
+
+    .form-car {
+        text-align: center;
+    }
+
+    img.star {
+        display: none;
+    }
+
+    .line-carlist {
+        display: none;
+    }
+
+    /* INDEX */
+
+    .page-car img {
+        display: none;
+    }
+
+    .brand-title {
+        display: block;
+    }
+
+    #hamburger,
+    #hamburger-content,
+    #hamburger-button,
+    #hamburger-sidebar,
+    #hamburger-overlay,
+    #hamburger-button-cart{
+        display: none;
+    }
+
+    .title-nav {
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        display: block;
+        background-color: #2A4D44;
+    }
+
+    h1 {
+        padding-top: 1%;
+    }
+
+    nav {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    nav, nav ul, nav ul li {
+        display: block;
+    }
+
+    nav ul {
+        margin: 1% 0 0 20%;
+    }
+    nav ul li {
+        float: left;
+        font-family: Didot;
+        font-size: 0.9em;
+        color: #2A4D44;
+        margin-left: 10%;
+    }
+
+    nav img {
+        width: 1.6%;
+        margin-left: 2%;
+    }
+
+    .garage {
+        display: none;
+    }
+    img.store-garage,.logo-garage {
+        display: none;
+    }
+
+    .suits-car {
+        display: block;
+        float: left;
+        margin-bottom: 5%;
+        width: 100%;
+        border-bottom:1px solid #979797;
+    }
+    .suits-car-home{
+        float: left;
+        text-align: center;
+        margin: 5% 12.29% 0 12%;
+    }
+    .suits-car-home h2 {
+        font-family: Didot;
+        color: #2A4D44;
+        margin-top: 6%;
+    }
+    .suits-car-home button {
+        float: left;
+        width: 50%;
+        height: 40px;
+        background-color: #2A4D44;
+        border: 1px solid #979797;
+        color: #FFF;
+        font-family: Geneva;
+        font-size: 0.8em;
+        margin: 10% 0 0 25%;
+    }
+
+    .suits-car-home span {
+        float: left;
+        margin:7% 0 0 10%;
+        font-family: Didot;
+        font-size: 1em;
+    }
+
+    .suits-car-home-img {
+        float: left;
+
+    }
+
+    .suits-car-home-img img {
+        float: left;
+        width: 599px;
+        height: 400px;
+    }
+
+    .news-article {
+        float: left;
+        margin-left: 1%;
+    }
+    .article {
+        float: left;
+        width: 33%;
+    }
+
+    .newsletter{
+        display: block;
+        position: relative;
+        float: left;
+        margin-top: 3%;
+        background-color: black;
+    }
+
+    .newsletter img {
+        width: 100%;
+        height: 450px;
+        opacity: 0.5;
+    }
+    .newsletter span {
+        position: absolute;
+        bottom: 70%;
+        left: 34.5%;
+        font-family: Didot;
+        font-size: 2em;
+        color: #FFF;
+
+    }
+    .newsletter input {
+        position: absolute;
+        width: 30%;
+        height: 40px;
+        bottom: 50%;
+        left: 35%;
+        border: none;
+        opacity: 0.5;
+    }
+
+    .newsletter input::placeholder {
+        font-family: Geneva;
+        font-size: 1.3em;
+        color: #2A4D44;
+        padding-left: 4%;
+    }
+
+    .newsletter button {
+        position: absolute;
+        width: 10%;
+        height: 40px;
+        background-color: #2A4D44;
+        border: 1px solid #979797;
+        color: #FFF;
+        font-family: Geneva;
+        font-size: 0.8em;
+        margin: 10% 0 0 25%;
+        left: 30%;
+        bottom: 50%;
+        outline: none;
+    }
+
+    footer {
+        float: left;
+        width: 100%;
+        background-color: #2A4D44;
+    }
+    footer img {
+        width: 4%;
+        padding:2% 0 2% 0;
+    }
+
+    footer ul {
+        display: block;
+        margin-left: 16%;
+    }
+
+    footer ul li {
+        float: left;
+        list-style: none;
+        font-family: Geneva;
+        margin:0 0 2% 3%;
+        color: #FFF;
+        border-right: 1px solid #fff;
+        padding-right: 3%;
+    }
+
+    footer ul li:last-child {
+        border-right: none;
+    }
+
+    /*------ Cart ------*/
+
+    .cart .first-car-list {
+        width: 100%;
+        height: 40px;
+        margin: 0;
+    }
+
+    .cart .first-car-list .page-car img {
+        display: block;
+        margin: 0;
+        width: inherit;
+        height: 20px;
+
+    }
+
+    .cart .page-car {
+        display: block;
+        padding-top: 1%;
+        padding-left: 2%;
+    }
+
+    .cart .page-car h3 {
+        margin: 0;
+    }
+
+    .cart .visu-car-list {
+        padding-top: 30px;
+    }
+
+    .cart .order-car span.cart-title-car {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cart .visu-car-list .car-img{
+        width: 40%;
+    }
+
+    .cart .content-carlist span:first-child {
+        margin-top: 0;
+    }
+
+    .cart .content-carlist {
+        width: 20%;
+        float: left;
+        font-size: 20px;
+        margin-top: 8%;
+    }
+
+    .cart .time-order {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .cart .time-order span {
+        padding: 0;
+        width: 100%;
+        float: left;
+    }
+
+    .cart .price-car-total span:first-child,
+    .cart .price-car-total span:last-child {
+        margin-top: 1%;
+    }
+
+    .sign .first-car-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sign .container_signin {
+        height: 100%;
+    }
+
+    .sign div[class*="form-step-"] {
+        margin-top: 2%;
+        height: 500px;
+    }
+
+    .connect-form input {
+        margin-top: 9%;
+    }
+
+    .sign .page-car {
+        display: block;
+    }
+
+    .sign .page-car img {
+        display: block;
+        margin: 0;
+        width: inherit;
+        height: 20px;
+    }
+
+    .sign .first-car-list {
+        height: 40px;
+    }
+
+    .container_signin {
+        margin-top: 8%;
+    }
+
+    .sign .page-car {
+        display: block;
+        padding-top: 1%;
+        padding-left: 2%;
+    }
+
+    .sign .page-car h3 {
+        margin: 0;
+    }
+
+
+}
+
+
+@media screen and (min-width: 930px){
+
+    .first-car-list {
+        height: 375px;
+    }
+
+    .cart .first-car-list
+    .sign .first-car-list {
+        height: 40px;
+    }
+
+    /*------ PAGE FICHE DESKTOP--------------*/
+
+    .visu-car-list .star{
+        display: none;
+    }
+
+    .carousel-inner{
+        width: 40%;
+        margin-left: 20%;
+    }
+
+
+    .page-car h3{
+        margin-top: 5%;
+    }
+
+    .first-car-list{
+        font-size: 1.5em;
+    }
+
+    .visu-car-list{
+        margin-right: 5%;
+        position: relative;
+    }
+
+    .fiche-title-car{
+        float: left;
+    }
+
+    .order-car{
+        margin-top: 2%;
+
+    }
+
+    button.open-calendar{
+        float: left;
+        width: 40%;
+    }
+
+    .fiche-description {
+    }
+    .perf-car{
+        margin-left: 30%;
+    }
+
+    .perf-car ul{
+        padding-right: 20%;
+    }
+
+    .perf-car li{
+        font-size: 1.2em;
+
+
+    }
+
+    .fiche-story-car p {
+        width: 60%;
+        font-size: 1.2em;
+        margin-left: 15%;
+    }
+
+    /*-------- FIN PAGE FICHE DESKTOP-------------*/
+
+}
+
+
+
+
+
+
+

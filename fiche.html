@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>SUIT'S CAR - CAR</title>
+</head>
+<body>
+<header>
+    <div class="brand-title">
+        <h1><a href="index.html">SUIT'S CAR</a></h1>
+    </div>
+    <nav class=" nav-bar clearfix">
+        <ul>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="list.html">LEASING</a></li>
+            <li><a href="#">AUCTIONS</a></li>
+        </ul>
+        <a href="cart.html"><img src="img-layout/shopping-basket-desk.svg" alt="cart"></a>
+        <a href="connect.html"><img src="img-layout/profile.svg" alt="profile"></a>
+    </nav>
+
+    <div id="hambuger" class="clearfix">
+        <div id="hamburger-content">
+            <ul class="clearfix">
+                <a href="#"><li>NEWS</li></a>
+                <a href="#"><li>WHO WE ARE ?</li></a>
+                <a href="list.html"><li>LEASING</li></a>
+                <a href="#"><li>AUCTIONS</li></a>
+                <a href="#"><li>CONTACT</li></a>
+                <a href="connect.html"><li>LOG-IN/LOG-OUT</li></a>
+            </ul>
+        </div>
+        <button class="clearfix" id="hamburger-button">&#9776;</button>
+        <div class="clearfix" id="hamburger-button-cart">
+            <img src="img-layout/shopping-basket.svg" alt="shopping basket">
+        </div>
+        <div id="hamburger-sidebar" class="closed">
+            <div id="hamburger-sidebar-header"><img src="img-layout/logo.png" alt=""></div>
+            <div id="hamburger-sidebar-body"></div>
+
+        </div>
+        <div id="hamburger-overlay"></div>
+    </div>
+</header>
+
+
+<div class="first-car-list clearfix">
+    <div class="page-car clearfix">
+        <img src="img-layout/arrow-prec.png" alt="previous button">
+        <h3>MERCEDES 300 SL - 1955</h3>
+    </div>
+    <div class="visu-car-list">
+        <div class="order-car clearfix">
+            <span class="fiche-title-car">300$/Days</span>
+            <div class="btn-carlist">
+                <button class="open-calendar">ORDER</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="calendar activate clearfix">
+    <div class="month">
+        <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>JULY</li>
+        </ul>
+    </div>
+
+    <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+    </ul>
+
+    <ul class="days">
+        <li>1</li>
+        <li class="future-event">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li class="future-event">7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li class="future-event">13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li class="future-event">20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li class="future-event">29</li>
+        <li>30</li>
+        <li>31</li>
+    </ul>
+</div>
+
+<div class="carousel ">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="img-content/mercedes1.jpg">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="img-content/mercedes2.jpg">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="img-content/mercedes3.jpg">
+        </div>
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="fiche-description">
+    <div class="perf-car">
+        <ul>
+            <li>Exterior</li>
+            <li>Interior</li>
+            <li>Cylinders</li>
+            <li>Engine Size</li>
+            <li>Transmission</li>
+        </ul>
+        <ul>
+            <li>SILVER</li>
+            <li>BLUE</li>
+            <li>6</li>
+            <li>3 LITER</li>
+            <li>MANUAL</li>
+        </ul>
+    </div>
+    <div class="fiche-story-car">
+        <p>The 300SL, whose name referred to its 3 Liter displacement and "Super Light" designation, first appeared in the 1952 Mille Miglia competition in May, won the sports race at the Swiss Grand Prix later in the month and went on to take first and second places at LeMans.</p>
+    </div>
+</div>
+
+<footer>
+    <img src="img-layout/logo-footer.png" alt="logo">
+    <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms & condition</a></li>
+        <li><a href="#">Suit's Car</a></li>
+    </ul>
+</footer>
+<script src="js/index.js"></script>
+<script src="js/fiche.js"></script>
+</body>
+</html>

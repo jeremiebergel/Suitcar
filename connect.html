@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>SUIT'S CAR - CAR</title>
+</head>
+<body class="sign">
+<header>
+    <div class="brand-title">
+        <h1><a href="index.html">SUIT'S CAR</a></h1>
+    </div>
+    <nav class=" nav-bar clearfix">
+        <ul>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="list.html">LEASING</a></li>
+            <li><a href="#">AUCTIONS</a></li>
+        </ul>
+        <a href="cart.html"><img src="img-layout/shopping-basket-desk.svg" alt="cart"></a>
+        <a href="connect.html"><img src="img-layout/profile.svg" alt="profile"></a>
+    </nav>
+
+    <div id="hambuger" class="clearfix">
+        <div id="hamburger-content">
+            <ul class="clearfix">
+                <a href="#"><li>NEWS</li></a>
+                <a href="#"><li>WHO WE ARE ?</li></a>
+                <a href="list.html"><li>LEASING</li></a>
+                <a href="#"><li>AUCTIONS</li></a>
+                <a href="#"><li>CONTACT</li></a>
+                <a href="connect.html"><li>LOG-IN/LOG-OUT</li></a>
+            </ul>
+        </div>
+        <button class="clearfix" id="hamburger-button">&#9776;</button>
+        <div class="clearfix" id="hamburger-button-cart">
+            <img src="img-layout/shopping-basket.svg" alt="shopping basket">
+        </div>
+        <div id="hamburger-sidebar" class="closed">
+            <div id="hamburger-sidebar-header"><img src="img-layout/logo.png" alt=""></div>
+            <div id="hamburger-sidebar-body"></div>
+
+        </div>
+        <div id="hamburger-overlay"></div>
+    </div>
+</header>
+
+
+
+<div class="first-car-list clearfix">
+    <div class="page-car clearfix">
+        <a href="cart.html"><img src="img-layout/arrow-prec.png" alt="previous button"></a>
+        <h3>SIGN UP</h3>
+    </div>
+</div>
+<img class="back-form" src="img-content/back-car.jpg" alt="background car formulaire">
+<form class="container_signin clearfix">
+<div class="connect-form form-step-1 active">
+    <input type="text" name="Name" placeholder=" First Name" required="">
+    <input type="text" name="Name" placeholder=" Last Name" required="">
+    <input type="email" name="email" placeholder=" E-mail" required="">
+    <input type="password" name="password" placeholder=" Password" required="">
+</div>
+    <div class="connect-form form-step-2">
+        <input type="text" name="adress" placeholder=" Street Adress" required="">
+        <input type="text" name="zip" placeholder=" ZIP Code" required="">
+        <input type="text" name="city" placeholder=" City" required="">
+        <input type="text" name="state" placeholder=" State" required="">
+    </div>
+    <div class="connect-form form-step-3">
+        <input type="text" name="card" placeholder=" Card Number" required="">
+        <input type="text" name="name" placeholder=" First/Last Name" required="">
+        <input type="text" name="exp" placeholder=" Exp" required="">
+        <input type="text" name="state" placeholder=" State" required="">
+    </div>
+    <div class="form-navigation">
+        <button type="button" class="btn-form step-before">&lt; Previous</button>
+        <button type="button" class=" btn-form step-after">Next &gt;</button>
+        <span class="clearfix"></span>
+    </div>
+</form>
+<footer>
+    <img src="img-layout/logo-footer.png" alt="logo">
+    <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms & condition</a></li>
+        <li><a href="#">Suit's Car</a></li>
+    </ul>
+</footer>
+<script src="js/connect.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>SUIT'S CAR - LIST</title>
+</head>
+<body>
+<header>
+    <div class="brand-title">
+        <h1><a href="index.html">SUIT'S CAR</a></h1>
+    </div>
+    <nav class=" nav-bar clearfix">
+        <ul>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="list.html">LEASING</a></li>
+            <li><a href="#">AUCTIONS</a></li>
+        </ul>
+        <a href="cart.html"><img src="img-layout/shopping-basket-desk.svg" alt="cart"></a>
+        <a href="connect.html"><img src="img-layout/profile.svg" alt="profile"></a>
+    </nav>
+
+    <div id="hambuger" class="clearfix">
+        <div id="hamburger-content">
+            <ul class="clearfix">
+                <a href="#"><li>NEWS</li></a>
+                <a href="#"><li>WHO WE ARE ?</li></a>
+                <a href="list.html"><li>LEASING</li></a>
+                <a href="#"><li>AUCTIONS</li></a>
+                <a href="#"><li>CONTACT</li></a>
+                <a href="connect.html"><li>LOG-IN/LOG-OUT</li></a>
+            </ul>
+        </div>
+        <button class="clearfix" id="hamburger-button">&#9776;</button>
+        <div class="clearfix" id="hamburger-button-cart">
+            <img src="img-layout/shopping-basket.svg" alt="shopping basket">
+        </div>
+        <div id="hamburger-sidebar" class="closed">
+            <div id="hamburger-sidebar-header"><img src="img-layout/logo.png" alt=""></div>
+            <div id="hamburger-sidebar-body"></div>
+
+        </div>
+        <div id="hamburger-overlay"></div>
+    </div>
+</header>
+
+    <div class="page-car clearfix">
+        <img src="img-layout/arrow-prec.png" alt="previous button">
+        <h3>LEASING</h3>
+    </div>
+    <div class="form-car">
+        <form class="spec-car" action="#" method="post">
+            <select name="type">
+                <option value="BRAND">BRAND</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Delahaye">Delahaye</option>
+            </select>
+        </form>
+
+        <form class="spec-car" action="#" method="post">
+            <select name="type">
+                <option value="MODEL">MODEL</option>
+                <option value="300SL">300SL</option>
+                <option value="Jaguar">D-TYPE</option>
+                <option value="Delahaye">TYPE 175</option>
+            </select>
+        </form>
+
+        <form class="spec-car" action="#" method="post">
+            <select name="type">
+                <option value="YEAR">YEAR</option>
+                <option value="1950">1950</option>
+                <option value="1960">1960</option>
+                <option value="1970">1970</option>
+            </select>
+        </form>
+
+        <form class="spec-car" action="#" method="post">
+            <select name="type">
+                <option value="PRICE">PRICE</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+            </select>
+        </form>
+    </div>
+<div class="wrapper-list">
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/mercedes1.jpg" alt="mercedes 300 SL">
+            <div class="content-carlist">
+                <span>MERCEDES</span>
+                <span>300 SL</span>
+                <span>1955</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/delahaye1.jpg" alt="delahaye type 175 de 1949">
+            <div class="content-carlist">
+                <span>DELAHAYE</span>
+                <span>Type 175</span>
+                <span>1949</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+
+
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/talbot1.jpg" alt="talbot lago t-26 de 1947">
+            <div class="content-carlist">
+                <span>MERCEDES</span>
+                <span>300 SL</span>
+                <span>1955</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <<button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/mercedes1.jpg" alt="mercedes 300 SL">
+            <div class="content-carlist">
+                <span>MERCEDES</span>
+                <span>300 SL</span>
+                <button  onclick="window.location.href='cart.html'">ORDER</button>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/delahaye1.jpg" alt="delahaye type 175 de 1949">
+            <div class="content-carlist">
+                <span>DELAHAYE</span>
+                <span>Type 175</span>
+                <span>1949</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+
+
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/talbot1.jpg" alt="talbot lago t-26 de 1947">
+            <div class="content-carlist">
+                <span>MERCEDES</span>
+                <span>300 SL</span>
+                <span>1955</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/mercedes1.jpg" alt="mercedes 300 SL">
+            <div class="content-carlist">
+                <span>MERCEDES</span>
+                <span>300 SL</span>
+                <span>1955</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/delahaye1.jpg" alt="delahaye type 175 de 1949">
+            <div class="content-carlist">
+                <span>DELAHAYE</span>
+                <span>Type 175</span>
+                <span>1949</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+
+
+    <div class="first-car-list clearfix">
+        <div class="visu-car-list">
+            <span class="price-car">300$/day</span>
+            <img class="car-img" src="img-content/talbot1.jpg" alt="talbot lago t-26 de 1947">
+            <div class="content-carlist">
+                <span>MERCEDES</span>
+                <span>300 SL</span>
+                <span>1955</span>
+            </div>
+        </div>
+
+        <div class="btn-carlist">
+            <button  onclick="window.location.href='fiche.html'">Read More</button>
+            <button  onclick="window.location.href='cart.html'">ORDER</button>
+        </div>
+        <div class="line-carlist"></div>
+    </div>
+</div>
+<footer>
+    <img src="img-layout/logo-footer.png" alt="logo">
+    <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms & condition</a></li>
+        <li><a href="#">Suit's Car</a></li>
+    </ul>
+</footer>
+<script src="js/index.js"></script></body>
+</html>
